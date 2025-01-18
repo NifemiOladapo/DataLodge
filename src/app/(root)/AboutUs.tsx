@@ -1,3 +1,4 @@
+import { serverHooks } from "next/dist/server/app-render/entry-base";
 import Image from "next/image";
 
 const AboutUs = () => {
@@ -5,11 +6,13 @@ const AboutUs = () => {
     <section className="px-3 bg-indigo-500 py-3 sm:py-5 text-center">
       <h1 className="sub-heading-text text-white">About Us</h1>
 
-      <div className="flex gap-5 w-full flex-col sm:flex-row max-w-[900px] mt-10 mx-auto">
+      <div className="flex gap-5 w-full flex-col max-w-[1200px] items-center mt-10 mx-auto">
         <Image
-          src={"/aboutus-image.jpg"}
+          src={"/aboutus-3.webp"}
+          quality={100}
           height={100}
-          className="w-[2000px]"
+          unoptimized
+          className="sm:w-[600px] w-[500px] h-[350px] sm:h-[450px]"
           width={100}
           alt="about-us image"
         />

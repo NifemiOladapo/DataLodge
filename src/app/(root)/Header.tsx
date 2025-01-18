@@ -19,7 +19,7 @@ const Header = () => {
     }
   };
   return (
-    <header className="flex  fixed shadow-md top-0 left-0 right-0 justify-between bg-gray-300 p-3 md:p-4 items-center">
+    <header className="flex fixed  shadow-md top-0 left-0 right-0 justify-between bg-gray-300 p-3 md:p-4 items-center">
       <h1 className="sm:text-3xl text-xl text-indigo-500 cursor-pointer">
         DataLodge
       </h1>

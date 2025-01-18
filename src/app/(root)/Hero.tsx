@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-[url('../../public/bg-image2.jpg')] bg-top bg-cover flex items-center w-full justify-center px-2">
+    <section className="min-h-screen bg-[url('../../public/bg-image.jpg')] bg-top bg-cover flex items-center w-full justify-center px-2">
       <div className="flex flex-col items-center">
         <h1 className="text-2xl sm:text-4xl md:text-5xl text-center">
           Welcome to DataLodge
