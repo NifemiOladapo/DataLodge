@@ -1,8 +1,14 @@
 "use client";
 
-import Image from "next/image";
 import { useRef } from "react";
 import MenuBar from "./MenuBar";
+import {
+  SignedOut,
+  SignInButton,
+  SignOutButton,
+  SignedIn,
+  UserButton,
+} from "@clerk/nextjs";
 
 const Header = () => {
   // Ref for the navbar, specifying it can be null or an HTML element
@@ -37,9 +43,19 @@ const Header = () => {
         <p className="cursor-pointer text-md font-light">About Us</p>
         <p className="cursor-pointer text-md font-light">Pricing</p>
         <p className="cursor-pointer text-md font-light">Our Services</p>
-        <button className="ghost-button">Login/Signup</button>
+        <SignedIn>
+          <div className="ghost-button">
+            <SignOutButton />
+          </div>
+        </SignedIn>
+        <SignedOut>
+          <div className="ghost-button">
+            <SignInButton forceRedirectUrl={"/dashboard"}/>
+          </div>
+        </SignedOut>
+        <UserButton />
       </nav>
-      <MenuBar onClick={toggleNavbarVisibility} />
+      <MenuBar onClick={toggleNavbarVisibility}/>
     </header>
   );
 };
