@@ -1,22 +1,12 @@
-import Link from "next/link";
-
 const Header = () => {
   return (
-    <header className="flex items-center justify-between p-5 bg-gray-100 shadow-md">
-      <h1 className="text-xl sm:text-2xl md:text-3xl text-purple-700">
-        DataLodge
-      </h1>
-      <nav className="flex gap-5 items-center">
-        <p className="cursor-pointer">About Us</p>
-        <p className="cursor-pointer">Our Services</p>
-        <p className="cursor-pointer">Pricing</p>
-        <p className="cursor-pointer">Faq</p>
-        <Link
-          href={"/login"}
-          className="px-10 py-2 border-solid hover:bg-purple-700 border-purple-700 transition hover:text-white  text-purple-700 border-2"
-        >
-          Login
-        </Link>
+    <header className="flex  fixed top-0 left-0 right-0 justify-between bg-gray-300 p-2 md:p-4 items-center">
+      <h1 className="sm:text-3xl text-xl text-indigo-500 cursor-pointer">DataLodge</h1>
+      <nav className="flex items-center gap-5">
+        <p className="cursor-pointer text-md font-light">About Us</p>
+        <p className="cursor-pointer text-md font-light">Pricing</p>
+        <p className="cursor-pointer text-md font-light">Our Services</p>
+        <button className="hover:bg-indigo-500 transition-all hover:text-white cursor-pointer text-md font-light border-indigo-500 border-2 py-2 px-3 sm:px-5">Login/Signup</button>
       </nav>
     </header>
   );

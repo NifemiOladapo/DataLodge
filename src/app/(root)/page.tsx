@@ -1,11 +1,9 @@
 import Home from "./Home";
 
-const HomePage = () => {
-  return (
-    <main>
-      <Home />
-    </main>
-  );
+const page = () => {
+  return <main className="flex bg-blue-500">
+    <Home />
+  </main>;
 };
 
-export default HomePage
+export default page;
