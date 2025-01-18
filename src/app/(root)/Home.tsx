@@ -1,5 +1,6 @@
 import AboutUs from "./AboutUs"
 import Hero from "./Hero"
+import OurServices from "./OurServices"
 import WhyChooseUs from "./WhyChooseUs"
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <Hero />
         <AboutUs />
         <WhyChooseUs />
+        <OurServices />
     </div>
   )
 }
