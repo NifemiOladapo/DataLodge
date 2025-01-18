@@ -5,3 +5,9 @@
 body{
     font-family: sans-serif;
 }
+
+@layer utilities{
+    .ghost-button{
+        @apply hover:bg-indigo-500 transition-all hover:text-white cursor-pointer font-light border-indigo-500 border-2 py-2 px-3 sm:px-5
+    }
+}

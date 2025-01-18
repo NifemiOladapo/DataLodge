@@ -6,7 +6,7 @@ const Header = () => {
         <p className="cursor-pointer text-md font-light">About Us</p>
         <p className="cursor-pointer text-md font-light">Pricing</p>
         <p className="cursor-pointer text-md font-light">Our Services</p>
-        <button className="hover:bg-indigo-500 transition-all hover:text-white cursor-pointer text-md font-light border-indigo-500 border-2 py-2 px-3 sm:px-5">Login/Signup</button>
+        <button className="ghost-button">Login/Signup</button>
       </nav>
     </header>
   );

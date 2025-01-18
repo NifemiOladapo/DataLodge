@@ -1,0 +1,5 @@
+{
+    "editor.multiCursorMergeOverlapping": true,
+    "terminal.integrated.altClickMovesCursor": true,
+    "notebook.navigation.allowNavigateToSurroundingCells": false
+}
