@@ -1,0 +1,22 @@
+import WalletBalance from "./WalletBalance";
+
+const Dashboard = () => {
+  return (
+    <div className="pt-32 px-8 md:px-20">
+      <div className="flex items-center w-full justify-between">
+        <div className="flex flex-col gap-1">
+          <h2>Welcome back Nifemi__oladapo</h2>
+          <p className="text-sm text-gray-500">
+            Stay connected to your loved ones.
+          </p>
+        </div>
+        <button className="normal-button">Fund Wallet</button>
+      </div>
+      <div className="mt-10">
+        <WalletBalance />
+      </div>
+    </div>
+  );
+};
+
+export default Dashboard;

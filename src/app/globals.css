@@ -2,15 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: sans-serif;
+body {
+  font-family: sans-serif;
 }
 
-@layer utilities{
-    .ghost-button{
-        @apply hover:bg-indigo-500 transition-all hover:text-white cursor-pointer font-light border-indigo-500 border-2 py-2 px-3 sm:px-5
-    }
-    .sub-heading-text{
-        @apply text-2xl sm:text-3xl
-    }
+@layer utilities {
+  .button {
+    @apply py-2 px-3 sm:px-5 cursor-pointer font-light transition-all;
+  }
+  .normal-button {
+    @apply button bg-indigo-500 text-white
+  }
+  .ghost-button {
+    @apply button border-2 hover:bg-indigo-500  hover:text-white  border-indigo-500;
+  }
+  .sub-heading-text {
+    @apply text-2xl sm:text-3xl;
+  }
 }
